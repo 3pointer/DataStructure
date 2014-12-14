@@ -166,17 +166,11 @@ int main()
         insertNode(p, a[i]);
 
     int val;
-    print(p);
-    printf("___________________________%d\n", p->RealMaxLevel);
     scanf("%d", &val);
     SkipListNode * ans = queryNode(p, val);
-    if (ans != NULL)
-        printf("%d\n", ans->val);
-    
-    scanf("%d", &val);
-    printf("%d", deleteList(p, val));
-    print(p);
-    printf("___________________________%d\n", p->RealMaxLevel);
-    getchar();
+    if (ans != NULL)  //may not find
+        printf("%d\n", ans->val);    
 }
+    
+//deleteNode test successful
 
