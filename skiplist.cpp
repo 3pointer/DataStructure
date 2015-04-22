@@ -153,24 +153,5 @@ int deleteList(SkipList * pSkipList, int val)
     return 0;
 }
 
-int main()
-{
-    int n;
-    srand(time(NULL));
-    scanf("%d", &n);
-    for (int i = 0; i < n; i++)
-        scanf("%d", &a[i]);
-
-    SkipList * p = createList();
-    for (int i = 0; i < n; i++)
-        insertNode(p, a[i]);
-
-    int val;
-    scanf("%d", &val);
-    SkipListNode * ans = queryNode(p, val);
-    if (ans != NULL)  //may not find
-        printf("%d\n", ans->val);    
-}
-    
 //deleteNode test successful
 
