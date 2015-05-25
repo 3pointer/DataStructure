@@ -85,7 +85,6 @@ void KDTree::Query(Node p, int m, int s, int dept){
 
 
 int main(){
-
     while(scanf("%d%d", &n, &k) != EOF){
         for (int i = 0; i < n; i++){
             for (int j = 0; j < k; j ++){
