@@ -37,7 +37,7 @@ class KDTree{
 
 }kd;
 
-void KDTree::Build(int l, int r, int s, int dept){
+void KDTree :: Build(int l, int r, int s, int dept){
     if (l > r)
         return ;
     flag[s] = 1;
@@ -50,7 +50,7 @@ void KDTree::Build(int l, int r, int s, int dept){
     Build(mid + 1,r,  rson, dept + 1);
 }
 
-void KDTree::Query(Node p, int m, int s, int dept){
+void KDTree :: Query(Node p, int m, int s, int dept){
     if (flag[s] == -1){
         return;
     }
@@ -82,7 +82,6 @@ void KDTree::Query(Node p, int m, int s, int dept){
         Query(p, m, y, dept + 1);
     }
 }
-
 
 int main(){
     while(scanf("%d%d", &n, &k) != EOF){
